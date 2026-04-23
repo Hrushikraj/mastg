@@ -1,0 +1,42 @@
+rules:
+  - id: mastg-android-excessive-dangerous-permissions
+    severity: WARNING
+    languages:
+      - xml
+    metadata:
+      summary: This rule detects dangerous Android permissions declared in the AndroidManifest.xml that may violate the principle of least privilege.
+    message: "[MASVS-PRIVACY-1] Dangerous Android permission detected."
+    pattern-either:
+      - pattern: <uses-permission android:name="android.permission.READ_CALENDAR"/>
+      - pattern: <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+      - pattern: <uses-permission android:name="android.permission.CAMERA"/>
+      - pattern: <uses-permission android:name="android.permission.READ_CONTACTS"/>
+      - pattern: <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+      - pattern: <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      - pattern: <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+      - pattern: <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+      - pattern: <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+      - pattern: <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+      - pattern: <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+      - pattern: <uses-permission android:name="android.permission.CALL_PHONE"/>
+      - pattern: <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+      - pattern: <uses-permission android:name="android.permission.BODY_SENSORS"/>
+      - pattern: <uses-permission android:name="android.permission.BODY_SENSORS_BACKGROUND"/>
+      - pattern: <uses-permission android:name="android.permission.SEND_SMS"/>
+      - pattern: <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+      - pattern: <uses-permission android:name="android.permission.READ_SMS"/>
+      - pattern: <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+      - pattern: <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+      - pattern: <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+      - pattern: <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+      - pattern: <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+      - pattern: <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+      - pattern: <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+      - pattern: <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+      - pattern: <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+      - pattern: <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+      - pattern: <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      - pattern: <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+      - pattern: <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+      - pattern: <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+      - pattern: <uses-permission android:name="android.permission.UWB_RANGING"/>
