@@ -91,14 +91,3 @@ The test fails because the app declares the following dangerous permissions:
 
 **Storage Permissions:**
 - `READ_MEDIA_IMAGES` - No photo gallery or media browsing
-
-**Remediation:**
-
-All 14 dangerous permissions should be removed from the AndroidManifest.xml to comply with the principle of least privilege. For each permission an app needs, developers should:
-
-1. **Evaluate necessity**: Does the app truly need this permission?
-2. **Consider alternatives**: Can the functionality be achieved without the permission (e.g., using system intents)?
-3. **Document justification**: If the permission is needed, document why
-4. **Request at runtime**: Only request dangerous permissions when the feature is actually used
-
-See the [Android documentation on minimizing permission requests](https://developer.android.com/privacy-and-security/minimize-permission-requests) for privacy-preserving alternatives.
