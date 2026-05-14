@@ -52,7 +52,7 @@ The rule has identified four instances in the AndroidManifest file where the app
 
 ## Evaluation
 
-The test **fails** because the app declares 14 dangerous permissions without any functional justification:
+The test fails because the app declares the following dangerous permissions:
 
 **Calendar Permissions:**
 - `READ_CALENDAR` - No calendar features exist in the app
