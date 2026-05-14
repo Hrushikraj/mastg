@@ -1,0 +1,39 @@
+                    
+                    
+┌──────────────────┐
+│ 14 Code Findings │
+└──────────────────┘
+                                
+    AndroidManifest_reversed.xml
+    ❯❱ rules.mastg-android-excessive-dangerous-permissions
+          ❰❰ Blocking ❱❱
+          [MASVS-PRIVACY-1] Dangerous Android permission detected.
+                                                                  
+            4┆ <uses-permission android:name="android.permission.READ_CALENDAR"/>
+            ⋮┆----------------------------------------
+            5┆ <uses-permission android:name="android.permission.CAMERA"/>
+            ⋮┆----------------------------------------
+            6┆ <uses-permission android:name="android.permission.READ_CONTACTS"/>
+            ⋮┆----------------------------------------
+            7┆ <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            ⋮┆----------------------------------------
+            8┆ <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            ⋮┆----------------------------------------
+            9┆ <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+            ⋮┆----------------------------------------
+           10┆ <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            ⋮┆----------------------------------------
+           11┆ <uses-permission android:name="android.permission.BODY_SENSORS"/>
+            ⋮┆----------------------------------------
+           12┆ <uses-permission android:name="android.permission.SEND_SMS"/>
+            ⋮┆----------------------------------------
+           13┆ <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+            ⋮┆----------------------------------------
+           14┆ <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+            ⋮┆----------------------------------------
+           15┆ <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"
+               android:usesPermissionFlags="neverForLocation"/>                      
+            ⋮┆----------------------------------------
+           16┆ <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+            ⋮┆----------------------------------------
+           17┆ <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
