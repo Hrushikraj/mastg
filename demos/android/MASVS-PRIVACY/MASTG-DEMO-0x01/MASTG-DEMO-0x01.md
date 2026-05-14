@@ -46,11 +46,7 @@ Let's run our @MASTG-TOOL-0110 rule against the reversed manifest file. The rule
 
 ## Observation
 
-The rule has identified **14 instances** in the AndroidManifest file where the app declares dangerous permissions. Each finding shows:
-
-- The line number in the reversed manifest
-- The permission name (e.g., `android.permission.CAMERA`)
-- The MASVS control tag (`[MASVS-PRIVACY-1]`)
+The rule has identified four instances in the AndroidManifest file where the app declares dangerous permissions.
 
 {{ output.txt }}
 
