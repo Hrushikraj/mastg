@@ -38,12 +38,6 @@ The `MastgTest.kt` file demonstrates how the app requests these permissions at r
 
 ## Steps
 
-We will use static analysis to detect all dangerous permissions declared in the AndroidManifest.xml file. This approach is useful because:
-
-1. It can be automated as part of CI/CD pipelines
-2. It doesn't require running the app
-3. It can scan APKs without source code access (using the reversed/decompiled manifest)
-
 Let's run our @MASTG-TOOL-0110 rule against the reversed manifest file. The rule checks for all known dangerous Android permissions.
 
 {{ ../../../../rules/mastg-android-excessive-dangerous-permissions.yaml }}
