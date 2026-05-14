@@ -15,22 +15,10 @@ Android apps must declare permissions in the `AndroidManifest.xml` file using `<
 
 ## Steps
 
-There are multiple tools that can help in finding permissions declared by an app. Refer to @MASTG-TECH-0118 and use any of the mentioned tools.
+There are multiple tools that can help in finding permissions in use by an app. Refer @MASTG-TECH-0118 to and use any of the mentioned tools.
 
 1. Extract the `AndroidManifest.xml` file from the APK (see @MASTG-TECH-0117).
 2. Obtain the list of declared permissions (see @MASTG-TECH-0126).
-
-Alternatively, you can use `aapt` to dump permissions directly from the APK:
-
-```bash
-aapt d permissions app-debug.apk
-```
-
-Or use `adb` to examine permissions of an installed app:
-
-```bash
-adb shell dumpsys package <package_name> | grep permission
-```
 
 ## Observation
 
