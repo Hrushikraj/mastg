@@ -34,11 +34,7 @@ adb shell dumpsys package <package_name> | grep permission
 
 ## Observation
 
-The output should contain the list of dangerous permissions declared by the app, including:
-
-- The permission name (e.g., `android.permission.CAMERA`)
-- The permission group it belongs to (e.g., Camera, Location, Contacts)
-- Whether it is a dangerous permission requiring runtime consent
+The output should contain the list of permissions declared by the app.
 
 ## Evaluation
 
